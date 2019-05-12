@@ -10,7 +10,6 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  buildConfiguration: 'Release'
   imageName: 'deploy-net-core-webapp-using-azure-and-docker/webapp:$(build.buildNumber)'
 
 steps:

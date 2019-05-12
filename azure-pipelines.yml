@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  imageName: 'deploy-net-core-webapp-using-azure-and-docker/webapp:$(build.buildNumber)'
+  imageName: 'webapp:$(build.buildNumber)'
 
 steps:
 - task: Docker@1

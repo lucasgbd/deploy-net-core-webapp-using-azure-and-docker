@@ -13,7 +13,7 @@ variables:
   imageName: 'deploy-net-core-webapp-using-azure-and-docker/webapp:$(build.buildNumber)'
 
 steps:
-- script: dotnet test /WebApp.Tests/WebApp.Tests.csproj --logger trx
+- script: dotnet test deploy-net-core-webapp-using-azure-and-docker/webapp/WebApp.Tests/WebApp.Tests.csproj --logger trx
   displayName: Run unit tests
 - task: PublishTestResults@2
   condition: succeededOrFailed()
